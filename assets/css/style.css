@@ -10,11 +10,22 @@ a {
     text-decoration: none;
 }
 
-html, body {
+html,
+body {
     width: 100vw;
     height: 100vh;
     background: url(../images/bg.jpg) 50% 50% no-repeat;
     background-size: cover;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
 }
 
 ::placeholder {
@@ -44,7 +55,8 @@ input {
     padding: 0.25em 0.75em 0.3em 0.75em;
 }
 
-p, span a {
+p,
+span a {
     font-size: 16px;
 }
 
@@ -83,7 +95,7 @@ button:hover {
     justify-content: center;
     color: #fff;
     border-radius: 0 0 20px 0;
-    z-index: 2; 
+    z-index: 2;
 }
 
 .logo {
@@ -99,6 +111,7 @@ button:hover {
     width: 100%;
     font-weight: 400;
     justify-content: space-between;
+    align-items: center;
 }
 
 .container {
@@ -107,7 +120,7 @@ button:hover {
     left: 0;
     width: 965px;
     height: 100%;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(20px);
     clip-path: polygon(0 0, 0 125px, 320px 125px, 320px 0);
 }
@@ -143,7 +156,10 @@ button:hover {
     flex: 4;
 }
 
-.buy, .connect, .legal, .newsletter {
+.buy,
+.connect,
+.legal,
+.newsletter {
     flex: 1;
 }
 
@@ -155,7 +171,7 @@ button:hover {
     position: relative;
     top: 40px;
     opacity: 0;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .link:hover {
@@ -174,6 +190,16 @@ button:hover {
     gap: 2em;
 }
 
+.newsletter form {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.newsletter input {
+    padding: 0.42em;
+}
+
 @media (max-width: 900px) {
     .col-1 {
         flex: 1;
@@ -182,21 +208,3 @@ button:hover {
         font-size: 30px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
