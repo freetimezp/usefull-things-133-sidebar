@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Налаштування кодування та сумісності -->
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <!-- Підключення іконок Phosphor у двох стилях: regular та fill -->
         <link
             rel="stylesheet"
             type="text/css"
@@ -16,16 +18,20 @@
             href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
         />
 
+        <!-- Підключення власного CSS -->
         <link rel="stylesheet" href="./assets/css/style.css" />
         <title>Project</title>
     </head>
 
     <body>
+        <!-- Фонове відео без звуку, яке повторюється автоматично -->
         <video loop muted autoplay>
             <source src="./assets/videos/video.mp4" />
         </video>
 
+        <!-- Основний контейнер сайту -->
         <div class="container">
+            <!-- Логотип і кнопка запуску -->
             <div class="logo-container">
                 <div class="logo">LOGO</div>
                 <div class="logo-bar">
@@ -36,8 +42,12 @@
                 </div>
             </div>
 
+            <!-- Головна overlay-навігація з розділами -->
             <div class="overlay">
+                <!-- Порожній блок (можливо для spacing або майбутнього контенту) -->
                 <div class="whitespace"></div>
+
+                <!-- Розділ "discover" з навігаційними посиланнями -->
                 <div class="discover item">
                     <div class="col-1">
                         <p>// &nbsp;&nbsp; discover</p>
@@ -53,6 +63,8 @@
                         <div class="link"><a href="#">contact</a></div>
                     </div>
                 </div>
+
+                <!-- Розділ "buy" з кнопками, які можуть вести на зовнішні ресурси -->
                 <div class="buy item">
                     <div class="col-1">
                         <p>// &nbsp;&nbsp; buy</p>
@@ -68,6 +80,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Розділ "connect" з посиланнями на соцмережі -->
                 <div class="connect item">
                     <div class="col-1">
                         <p>// &nbsp;&nbsp; connect</p>
@@ -82,6 +96,8 @@
                         <span><a href="#">youtube</a></span>
                     </div>
                 </div>
+
+                <!-- Розділ "legal" з юридичними посиланнями -->
                 <div class="legal item">
                     <div class="col-1">
                         <p>// &nbsp;&nbsp; legal</p>
@@ -92,6 +108,8 @@
                         <span><a href="#">privacy policy</a></span>
                     </div>
                 </div>
+
+                <!-- Розділ "newsletter" з формою підписки -->
                 <div class="newsletter item">
                     <div class="col-1">
                         <p>// &nbsp;&nbsp; newsletter</p>
@@ -106,7 +124,10 @@
             </div>
         </div>
 
+        <!-- GSAP для анімацій -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"></script>
+
+        <!-- Основний JS-файл проекту -->
         <script src="./assets/js/main.js"></script>
     </body>
 </html>
